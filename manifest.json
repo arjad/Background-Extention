@@ -1,0 +1,22 @@
+{
+    "manifest_version":2,
+    "name":"iEatBackground",
+    "description":"Add custom bg to chrome",
+    "version":"1.0",
+    "icons":{
+        "16":"/img/me.png",
+        "48":"/img/me.png",
+        "128":"/img/me.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16":"/img/me.png",
+            "48":"/img/me.png",
+            "128":"/img/me.png"
+        }
+    },
+    "content_scripts":[{
+        "matches":["https://www.google.com/"],
+        "css":["main.css"]
+    }]
+}
